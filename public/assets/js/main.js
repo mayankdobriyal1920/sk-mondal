@@ -60,11 +60,13 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
-    console.log('mobile-nav-toggle');
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    document.addEventListener("click", function(event) {
+      const targetElement = event.target;
+      if (targetElement.classList.contains('mobile-nav-toggle')) {
+        select('#navbar').classList.toggle('navbar-mobile')
+        targetElement.classList.toggle('bi-list')
+        targetElement.classList.toggle('bi-x')
+      }
   })
 
   /**
