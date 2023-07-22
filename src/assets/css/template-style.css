@@ -10,8 +10,11 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Nunito Sans',sans-serif !important;
+  font-family: "Times New Roman",Times,serif!important;
   color: #444444;
+}
+p{
+  font-size: 18px!important;
 }
 
 a {
@@ -22,15 +25,6 @@ a {
 a:hover {
   color: #86db9f;
   text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -401,20 +395,8 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 80vh;
-  background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  height: 90vh;
   position: relative;
-}
-
-#hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 #hero .container {
@@ -433,7 +415,7 @@ h6 {
   font-weight: 700;
   line-height: 56px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman",Times,serif;
 }
 
 #hero h2 {
@@ -443,7 +425,7 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 1px;
@@ -468,10 +450,6 @@ h6 {
 }
 
 @media (max-width: 768px) {
-  #hero {
-    height: 100vh;
-  }
-
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -483,11 +461,37 @@ h6 {
   }
 }
 
+@media (min-width: 1272px) and (max-width: 1484px) {
+  .carousel .slide img {
+    width: 150%!important;
+  }
+}
+@media (min-width: 924px) and (max-width: 1272px) {
+  .carousel .slide img {
+    width: 160%!important;
+  }
+}
+@media (min-width: 600px) and (max-width: 924px) {
+  .carousel .slide img {
+    width: 250%!important;
+  }
+}
+@media (min-width: 300px) and (max-width: 600px) {
+  .carousel .slide img {
+    width: 400%!important;
+  }
+}
+@media (min-width: 200px) and (max-width: 300px) {
+  .carousel .slide img {
+    width: 450%!important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 25px 0;
   overflow: hidden;
 }
 
@@ -508,7 +512,7 @@ section {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman",Times,serif;
 }
 
 .section-title h2::after {
@@ -526,7 +530,7 @@ section {
   font-size: 36px;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   color: #37423b;
 }
 
@@ -617,7 +621,7 @@ section {
 .counts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   font-size: 15px;
   font-weight: 600;
   color: #37423b;
@@ -1002,7 +1006,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman",Times,serif;
 }
 
 .course-details .course-info p {
@@ -1176,7 +1180,7 @@ section {
   font-size: 36px;
   color: #b79e6e;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   margin-bottom: 20px;
 }
 
@@ -1232,7 +1236,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1435,7 +1439,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Times New Roman",Times,serif;
   color: #777777;
 }
 
