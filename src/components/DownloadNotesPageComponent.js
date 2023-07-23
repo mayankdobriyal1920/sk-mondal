@@ -6,7 +6,7 @@ const api = Axios.create({
     baseURL: `https://121tuition.in/api-call-tutor/`
 })
 
-function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition}) {
+function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition,selectedSubjectName}) {
     const [dataLoading,setDataLoading] = React.useState(false);
     const [studyData,setStudyData] = React.useState([]);
 
@@ -28,7 +28,6 @@ function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition}) {
         const getAllDataForStudy = async (condition)=>{
             setDataLoading(true);
             const { data } = await api.post('common/actionToGetStudyMaterialByHeadingTabAndSubTabApiCall',{condition});
-            console.log('data?.response',data?.response);
             let keyIndex = [];
             let finalData = [];
             data?.response?.map((dataStudy,key)=>{
@@ -55,7 +54,7 @@ function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition}) {
         <Modal show={modalShow} onHide={()=>setModalShow(false)} fullscreen={true}>
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    Download Study Materials
+                    {selectedSubjectName}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -73,8 +72,7 @@ function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition}) {
                                             <div key={tkey} className="col-lg-4 col-md-6 d-flex align-items-stretch">
                                                 <div className="course-item">
                                                     <div className="course-content">
-                                                        <h3><a>{topicData?.topic_name}</a></h3>
-                                                        <a onClick={()=>openPhoneNumberPopupToDownload(topicData?.link)} className="get-started-btn download_notes_a_tag">CLICK HERE TO DOWNLOAD</a>
+                                                        <p><a className={"download_notes_a_tag color_theme"} onClick={()=>openPhoneNumberPopupToDownload(topicData?.link)}>{tkey+1}: {topicData?.topic_name}</a></p>
                                                     </div>
                                                 </div>
                                             </div>
