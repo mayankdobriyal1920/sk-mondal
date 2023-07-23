@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
+import {NavLink} from "react-router-dom";
 
-export default function HeaderMainComponent(){
+export default function HeaderMainComponent({setModalShow}){
     return (
         <header id="header" className="fixed-top">
             <div className="container d-flex align-items-center">
-                <h1 className="logo me-auto"><a>S.K.MONDAL</a></h1>
+                <h1 className="logo me-auto"><NavLink to="/">S.K.MONDAL</NavLink></h1>
                 {/*<a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>*/}
                 <nav id="navbar" className="navbar order-last order-lg-0">
                     <ul>
@@ -87,6 +88,7 @@ export default function HeaderMainComponent(){
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"/>
                 </nav>
+                <a onClick={()=>setModalShow(true)} className="get-started-btn">DOWNLOAD</a>
             </div>
         </header>
     )
