@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import {NavLink} from "react-router-dom";
 
-export default function HeaderMainComponent({setModalShow}){
+export default function HeaderMainComponent({openHeadingTabInModalPopup}){
     return (
         <header id="header" className="fixed-top">
             <div className="container d-flex align-items-center">
@@ -81,14 +81,52 @@ export default function HeaderMainComponent({setModalShow}){
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass="active" smooth spy to="contact">
-                                CONTACT
+                            <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(1)}>
+                                STUDY MATERIALS
+                            </Link>
+                        </li>
+                        <li className="dropdown">
+                            <Link activeClass="active">
+                                CLASS LINK
+                            </Link>
+                            <ul>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,1)}>
+                                    Plus and iconic Class
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,2)}>
+                                    FAA, Special Class
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,3)}>
+                                    XE:Gate with Mondal
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,4)}>
+                                    SSC JE, AE, PSUs
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,5)}>
+                                    Mains SSC DRDO ALL
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,6)}>
+                                    Virtual Calculator
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,7)}>
+                                    Post Gate Guidance
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,8)}>
+                                    Bhramastra Batch
+                                </Link>
+                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,9)}>
+                                    Quick Revision Course
+                                </Link>
+                            </ul>
+                        </li>
+                        <li>
+                            <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(3)}>
+                                TESTS
                             </Link>
                         </li>
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"/>
                 </nav>
-                <a onClick={()=>setModalShow(true)} className="get-started-btn">DOWNLOAD</a>
             </div>
         </header>
     )
