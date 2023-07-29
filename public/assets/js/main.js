@@ -60,13 +60,22 @@
   /**
    * Mobile nav toggle
    */
-    document.addEventListener("click", function(event) {
-      const targetElement = event.target;
-      if (targetElement.classList.contains('mobile-nav-toggle')) {
-        select('#navbar').classList.toggle('navbar-mobile')
-        targetElement.classList.toggle('bi-list')
-        targetElement.classList.toggle('bi-x')
+  document.addEventListener("click", function(event) {
+    console.log('event',event);
+    const targetElement = event.target;
+    if (targetElement.classList.contains('mobile-nav-toggle')) {
+      select('#navbar').classList.toggle('navbar-mobile')
+      targetElement.classList.toggle('bi-list')
+      targetElement.classList.toggle('bi-x')
+    }
+    if (targetElement.closest('.click_a_tag_header')) {
+      console.log('click_a_tag_header');
+      if(select('#navbar').classList.contains('navbar-mobile')) {
+        event.preventDefault();
+        if(targetElement.closest('.click_a_tag_header').nextElementSibling)
+        targetElement.closest('.click_a_tag_header').nextElementSibling.classList.toggle('dropdown-active')
       }
+    }
   })
 
   /**

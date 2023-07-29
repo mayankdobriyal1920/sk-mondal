@@ -16,10 +16,10 @@ export default function HeaderMainComponent({openHeadingTabInModalPopup}){
                             </Link>
                         </li>
                         <li className="dropdown">
-                            <Link activeClass="active" smooth spy to="about">
+                            <a className={"click_a_tag_header"}>
                                 <span>ABOUT ME</span>
                                 <i className="bi bi-chevron-down"/>
-                            </Link>
+                            </a>
                             <ul>
                                 <Link activeClass="active" smooth spy to="story">
                                     Blessing for the World
@@ -42,10 +42,10 @@ export default function HeaderMainComponent({openHeadingTabInModalPopup}){
                             </ul>
                         </li>
                         <li className="dropdown">
-                            <Link activeClass="active" smooth spy to="family">
+                            <a className={"click_a_tag_header"}>
                                 <span>FAMILY STORY</span>
                                 <i className="bi bi-chevron-down"/>
-                            </Link>
+                            </a>
                             <ul>
                                 <Link activeClass="active" smooth spy to="family">
                                     Family Life
@@ -59,10 +59,10 @@ export default function HeaderMainComponent({openHeadingTabInModalPopup}){
                             </ul>
                         </li>
                         <li className="dropdown">
-                            <Link activeClass="active" smooth spy to="school">
+                            <a className={"click_a_tag_header"}>
                                 <span>EDUCATION</span>
                                 <i className="bi bi-chevron-down"/>
-                            </Link>
+                            </a>
                             <ul>
                                 <Link activeClass="active" smooth spy to="school">
                                     School Education
@@ -81,48 +81,48 @@ export default function HeaderMainComponent({openHeadingTabInModalPopup}){
                             </Link>
                         </li>
                         <li>
-                            <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(1)}>
+                            <a onClick={()=>openHeadingTabInModalPopup(1)}>
                                 STUDY MATERIALS
-                            </Link>
+                            </a>
                         </li>
                         <li className="dropdown">
-                            <Link activeClass="active">
+                            <a className={"click_a_tag_header"}>
                                 CLASS LINK
-                            </Link>
+                            </a>
                             <ul>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,1)}>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,1)}>
                                     Plus and iconic Class
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,2)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,2)}>
                                     FAA, Special Class
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,3)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,3)}>
                                     XE:Gate with Mondal
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,4)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,4)}>
                                     SSC JE, AE, PSUs
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,5)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,5)}>
                                     Mains SSC DRDO ALL
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,6)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,6)}>
                                     Virtual Calculator
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,7)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,7)}>
                                     Post Gate Guidance
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,8)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,8)}>
                                     Bhramastra Batch
-                                </Link>
-                                <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(2,9)}>
+                                </a>
+                                <a onClick={()=>openHeadingTabInModalPopup(2,9)}>
                                     Quick Revision Course
-                                </Link>
+                                </a>
                             </ul>
                         </li>
                         <li>
-                            <Link activeClass="active" onClick={()=>openHeadingTabInModalPopup(3)}>
+                            <a onClick={()=>openHeadingTabInModalPopup(3)}>
                                 TESTS
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                     <i className="bi bi-list mobile-nav-toggle"/>
