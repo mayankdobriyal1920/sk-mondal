@@ -2,6 +2,19 @@ import React from 'react';
 import slider1 from "../assets/img/slider/slide-1.jpg";
 import slider2 from "../assets/img/slider/slide-2.jpg";
 import slider3 from "../assets/img/slider/slide-3.jpg";
+import slider4 from "../assets/img/slider/slide-4.jpg";
+import slider5 from "../assets/img/slider/slide-5.jpg";
+import slider6 from "../assets/img/slider/slide-6.jpg";
+import slider7 from "../assets/img/slider/slide-7.jpg";
+import slider8 from "../assets/img/slider/slide-8.jpg";
+import slider9 from "../assets/img/slider/slide-9.jpg";
+import slider10 from "../assets/img/slider/slide-10.jpg";
+import slider11 from "../assets/img/slider/slide-11.jpg";
+import slider12 from "../assets/img/slider/slide-12.jpg";
+import slider13 from "../assets/img/slider/slide-13.jpg";
+import slider14 from "../assets/img/slider/slide-14.jpg";
+import slider15 from "../assets/img/slider/slide-15.jpg";
+
 import family1 from "../assets/img/family-1.jpg";
 import family2 from "../assets/img/family-2.jpg";
 import school1 from "../assets/img/school-1.jpg";
@@ -29,39 +42,45 @@ function MainPageComponent() {
     return (
      <>
          <section id="hero" className="d-flex justify-content-center align-items-center">
-             <Carousel interval={3000} autoPlay={false} swipeable={true} showThumbs={false}>
+             <Carousel interval={3000} autoPlay={true} swipeable={true} showThumbs={false}>
                  <div>
                      <img src={slider1} />
-                     <p className="legend">
-                         <div className="legend-inner-container-2" data-aos="zoom-in" data-aos-delay="100">
-                             <h1>My Achievements</h1>
-                             <h2>Worked at NTPC and attended various training programs</h2>
-                             <h2>on hydro power plant in different Hydro power projects and NPTI.</h2>
-                             <a href="#" className="btn-get-started">READ MORE</a>
-                         </div>
-                     </p>
                  </div>
                  <div>
-                     <img src={slider2} />
-                     <p className="legend">
-                         <div className="legend-inner-container" data-aos="zoom-in" data-aos-delay="100">
-                             <h1>Education</h1>
-                             <h2>Shri S K Mondal started his engineering in 1998 and</h2>
-                             <h2>graduated from the Bengal Engineering College, Shibpur...</h2>
-                             <a href="#" className="btn-get-started">READ MORE</a>
-                         </div>
-                     </p>
+                     <img src={slider4} />
                  </div>
                  <div>
-                     <img src={slider3} />
-                     <p className="legend">
-                         <div className="legend-inner-container-2" data-aos="zoom-in" data-aos-delay="100">
-                             <h1>Family Life</h1>
-                             <h2>He was born as the seventh child out of the eight siblings</h2>
-                             <h2>to Late Shri Gopal Chandra Mondal and Late Shrimati Niyati Mondal.</h2>
-                             <a href="#" className="btn-get-started">READ MORE</a>
-                         </div>
-                     </p>
+                     <img src={slider5} />
+                 </div>
+                 <div>
+                     <img src={slider6} />
+                 </div>
+                 <div>
+                     <img src={slider7} />
+                 </div>
+                 <div>
+                     <img src={slider8} />
+                 </div>
+                 <div>
+                     <img src={slider9} />
+                 </div>
+                 <div>
+                     <img src={slider10} />
+                 </div>
+                 <div>
+                     <img src={slider11} />
+                 </div>
+                 <div>
+                     <img src={slider12} />
+                 </div>
+                 <div>
+                     <img src={slider13} />
+                 </div>
+                 <div>
+                     <img src={slider14} />
+                 </div>
+                 <div>
+                     <img src={slider15} />
                  </div>
              </Carousel>
          </section>
