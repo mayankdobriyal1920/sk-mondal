@@ -14,11 +14,13 @@ function DownloadNotesPageComponent({modalShow,setModalShow,queryCondition,selec
         let phoneNumberInLocalStorage = localStorage.getItem('phoneNumber');
         if(!phoneNumberInLocalStorage){
             let value = prompt("Enter your mobile number : ", "eg. 9999999999");
-            if(value?.length === 10){
-                window.open(link,'_blank');
-                localStorage.setItem('phoneNumber',value);
-            }else{
-                alert("Please enter a valid mobile number");
+            if(value) {
+                if (value?.length === 10) {
+                    window.open(link, '_blank');
+                    localStorage.setItem('phoneNumber', value);
+                } else {
+                    alert("Please enter a valid mobile number");
+                }
             }
         }else{
             window.open(link,'_blank');
